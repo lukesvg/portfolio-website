@@ -39,21 +39,22 @@ img {
   width: 100%;
 }
 
+a {
+  color: #0d0d0d;
+  text-decoration: none; /* No underlining */
+}
+
 a:visited { /* visited link */
-  color: #f5c53e;
+  color: #0d0d0d;
 }
 a:hover,
 a:focus {
-  color: #ffe7a5;
+  color: #0029ff;
   text-decoration: underline;
 }
-a:active { /* selected link */
-  color: #0029FF;
-}
 
-a {
-  color: #0D0D0D;
-  text-decoration: none; /* No underlining */
+a:active { /* selected link */
+  color: #0029ff;
 }
 
 .button {
@@ -74,12 +75,12 @@ a {
 
 .button.contact {
   background-color: transparent;
-  color: #0d0d0d;
+  color: #f5c53e;
   text-transform: uppercase;
-  border: 2px solid #0d0d0d;
+  border: 2px solid #f5c53e;
 }
 
 .button.contact:hover {
   background-color: #f5c53e;
-  color: #0d0d0d;
+  color: #f5c53e;
 }
