@@ -172,7 +172,27 @@ nav > ul > li > a {
 }
 
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+  width: 50%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 @media only screen and (min-width: 1440px) {
+}
+
+@keyframes color-change {
+0% {background-color: #edc655}
+50% {background-color: #fcffad}
+100% {background-color: #f76414}
+}
+
+
+  .sun {
+  animation: 4s color-change infinite alternate linear;
 }
