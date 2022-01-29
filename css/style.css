@@ -125,7 +125,7 @@ header {
 }
 
 main {
-  padding-top: 110px;
+  padding-top: 99px;
 }
 
 nav > ul {
@@ -142,4 +142,37 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 500;
   color: #0d0d0d;
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 16px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1440px) {
 }
