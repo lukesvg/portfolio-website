@@ -78,7 +78,7 @@ a:active { /* selected link */
 }
 
 .button.contact {
-  background-color: transparent;
+  background-color: #0d0d0d;
   color: #f5c53e;
   text-transform: uppercase;
   border: 2px solid #f5c53e;
@@ -86,7 +86,7 @@ a:active { /* selected link */
 
 .button.contact:hover {
   background-color: #f5c53e;
-  color: #f5c53e;
+  color: #0029ff;
 }
 
 /* Layout styling */
@@ -102,6 +102,7 @@ a:active { /* selected link */
 .logo {
   max-width: 250px;
 }
+
 
 header {
   background-color: #f5c53e;
@@ -192,7 +193,24 @@ nav > ul > li > a {
 100% {background-color: #f76414}
 }
 
-
   .sun {
   animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 28s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 28s cloud-move-reverse infinite alternate linear;
 }
