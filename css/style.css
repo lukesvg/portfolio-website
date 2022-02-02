@@ -39,6 +39,13 @@ h4 {
   font-weight: 500;
 }
 
+#hero h1 span {
+  display: block;
+  margin-top: 1em;
+  font-weight: 400;
+  font-size: 60%;
+}
+
 img {
   width: 100%;
 }
@@ -126,12 +133,13 @@ header {
 }
 
 main {
-  padding-top: 99px;
+  padding-top: 112px;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li {
@@ -154,7 +162,7 @@ nav > ul > li > a {
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 0.5em;
   }
 
   .col-md-6 {
