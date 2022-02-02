@@ -110,6 +110,16 @@ a:active { /* selected link */
   max-width: 250px;
 }
 
+footer {
+  text-align: left;
+}
+
+.social .fab {
+  font-size: 3em;
+  color: #000000;
+  margin-right: 12px;
+  margin-top: 12px;
+}
 
 header {
   background-color: #f5c53e;
