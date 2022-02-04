@@ -114,6 +114,10 @@ footer {
   text-align: left;
 }
 
+iframe.prototype {
+  width: 100%;
+}
+
 .social .fab {
   font-size: 3em;
   color: #000000;
