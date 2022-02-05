@@ -127,6 +127,8 @@ iframe.prototype {
 }
 
 .profpic img {
+  display: block;
+  text-align: center;
   max-width: 100px;
 }
 
