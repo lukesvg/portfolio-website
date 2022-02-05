@@ -126,10 +126,10 @@ iframe.prototype {
   margin-top: 12px;
 }
 
-.profpic img {
+.profpic {
   display: block;
   text-align: center;
-  max-width: 100px;
+  max-width: 500px;
 }
 
 header {
