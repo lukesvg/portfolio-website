@@ -108,7 +108,7 @@ a:active { /* selected link */
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 footer {
@@ -134,7 +134,6 @@ iframe.prototype {
 
 header {
   background-color: #f5c53e;
-  text-align: center;
   padding: 10px 0;
   box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.6);
   position: fixed;
@@ -169,9 +168,6 @@ nav > ul {
   margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-}
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -180,7 +176,55 @@ nav > ul > li > a {
   color: #0d0d0d;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 @media only screen and (min-width: 640px) {
+  .navtoggle li:last-child {
+  display: none;
+}
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul {
+  margin: 1em 0;
+}
+  .logo {
+    max-width: 250px;
+  }
   header {
   text-align: unset;
   padding: 20px 0 13px;
