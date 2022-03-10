@@ -3,7 +3,6 @@ Colors used:
 Primary Color (Yellow): #F5C53E;
 Secondary Color (Black): #0D0D0D;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -20,6 +19,7 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.5833em;
   font-weight: 700;
@@ -35,6 +35,7 @@ h3 {
   font-size: 1.6667em;
   font-weight: 500;
 }
+
 h4 {
   font-size: 1.3333em;
   font-weight: 500;
@@ -53,35 +54,42 @@ img {
 
 a {
   color: #0d0d0d;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
-a:visited { /* visited link */
-  color: #ffffff;
+a:visited {
+  /* visited link */
+  color: #0d0d0d;
 }
+
 a:hover,
 a:focus {
   color: #0029ff;
   text-decoration: underline;
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #0029ff;
 }
 
 .button {
   display: inline-block;
   background-color: #0d0d0d;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 600;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 0px solid #ffffff; /* width of the border, type, color */
+  border-bottom: 0px solid #ffffff;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -98,13 +106,13 @@ a:active { /* selected link */
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 .logo {
@@ -135,13 +143,14 @@ iframe.prototype {
 header {
   background-color: #f5c53e;
   padding: 10px 0;
-  box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.6);
+  box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.6);
   position: fixed;
   width: 100%;
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 #hero {
@@ -149,7 +158,6 @@ header {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-
 }
 
 main {
@@ -162,14 +170,13 @@ main {
   margin-right: auto;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 500;
@@ -192,43 +199,49 @@ nav > ul > li > a {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 @media only screen and (min-width: 640px) {
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
+
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-  nav > ul > li {
     display: inline-block;
   }
-  nav > ul {
-  margin: 1em 0;
-}
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
   .logo {
     max-width: 250px;
   }
+
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
   nav {
     width: auto;
@@ -236,70 +249,154 @@ nav > ul > li > a {
     margin-top: 0.5em;
   }
 
-  .col-md-1 {width: 8.33%;}
-  .col-md-2 {width: 16.66%;}
-  .col-md-3 {width: 25%;}
-  .col-md-4 {width: 33.33%;}
-  .col-md-5 {width: 41.66%;}
-  .col-md-6 {width: 50%;}
-  .col-md-7 {width: 58.33%;}
-  .col-md-8 {width: 66.66%;}
-  .col-md-9 {width: 75%;}
-  .col-md-10 {width: 83.33%;}
-  .col-md-11 {width: 91.66%;}
-  .col-md-12 {width: 100%;}
+  .col-md-1 {
+    width: 8.33%;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 16px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 16px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px;
   }
-  .col-lg-1 {width: 8.33%;}
-  .col-lg-2 {width: 16.66%;}
-  .col-lg-3 {width: 25%;}
-  .col-lg-4 {width: 33.33%;}
-  .col-lg-5 {width: 41.66%;}
-  .col-lg-6 {width: 50%;}
-  .col-lg-7 {width: 58.33%;}
-  .col-lg-8 {width: 66.66%;}
-  .col-lg-9 {width: 75%;}
-  .col-lg-10 {width: 83.33%;}
-  .col-lg-11 {width: 91.66%;}
-  .col-lg-12 {width: 100%;}
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 @keyframes color-change {
-0% {background-color: #edc655}
-50% {background-color: #fcffad}
-100% {background-color: #f76414}
+  0% {
+    background-color: #edc655
+  }
+
+  50% {
+    background-color: #fcffad
+  }
+
+  100% {
+    background-color: #f76414
+  }
 }
 
-  .sun {
+.sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -307,8 +404,13 @@ nav > ul > li > a {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
